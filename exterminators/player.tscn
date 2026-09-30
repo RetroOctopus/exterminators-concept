@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://drdyrivntblr8"]
+
+[ext_resource type="Script" uid="uid://c4xa0b536s357" path="res://player.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bkx2fd3goeo87" path="res://art/exterminator_right.png" id="2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j3pel"]
+size = Vector2(32, 71)
+
+[node name="Player" type="Area2D" unique_id=1961126836]
+script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1161620557]
+position = Vector2(6, -1.5)
+shape = SubResource("RectangleShape2D_j3pel")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1964523330]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2")

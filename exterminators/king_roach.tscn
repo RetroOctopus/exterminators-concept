@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://m4qrlhb76en4"]
+
+[ext_resource type="Script" uid="uid://dtp033rp022bh" path="res://king_roach.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bian78ugo4t5b" path="res://art/king_roach.png" id="2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v8qja"]
+radius = 64.647675
+height = 260.63403
+
+[node name="KingRoach" type="Area2D" unique_id=509822143]
+script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=942232374]
+position = Vector2(-34, 36)
+rotation = 1.3089969
+shape = SubResource("CapsuleShape2D_v8qja")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1000077609]
+position = Vector2(-15, 12)
+scale = Vector2(0.54, 0.54)
+texture = ExtResource("2")

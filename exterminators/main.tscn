@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cnlfygofiw8hm"]
+
+[ext_resource type="Script" uid="uid://ydyc1qkxmjl0" path="res://main.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://drdyrivntblr8" path="res://player.tscn" id="2"]
+
+[node name="Main" type="Node2D" unique_id=739806839]
+script = ExtResource("1")
+
+[node name="Player" parent="." unique_id=1824047937 instance=ExtResource("2")]
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=299347720]
+wait_time = 0.8
+autostart = true
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1188527593]
+
+[node name="HealthLabel" type="Label" parent="HUD" unique_id=1156375528]
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 300.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 22
+text = "Health"
+
+[node name="KillsLabel" type="Label" parent="HUD" unique_id=1176208672]
+offset_left = 16.0
+offset_top = 44.0
+offset_right = 300.0
+offset_bottom = 70.0
+theme_override_font_sizes/font_size = 22
+text = "Exterminated"
+
+[node name="AmmoLabel" type="Label" parent="HUD" unique_id=1601648444]
+offset_left = 16.0
+offset_top = 76.0
+offset_right = 300.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 22
+text = "Ammo"
+
+[node name="BossHealthLabel" type="Label" parent="HUD" unique_id=1189091634]
+offset_left = 16.0
+offset_top = 108.0
+offset_right = 400.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 22
+text = "King Roach"
+
+[node name="MessageLabel" type="Label" parent="HUD" unique_id=777800238]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 142.0
+offset_right = 300.0
+offset_bottom = 222.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
